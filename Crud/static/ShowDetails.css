@@ -1,0 +1,93 @@
+* {
+  background-color: #18185b;
+  color: #f97b14;
+}
+h1{
+  text-align: center;
+}
+.navbar {
+  box-shadow: 2px 2px 5px 2px #d6d6e5;
+  align-content: center;
+  padding: 20px;
+  background-color: #d6d6e5;
+  color: #f97b14;
+}
+h2,
+ul,
+a {
+  display: inline;
+  background-color: #d6d6e5;
+  color: #f97b14;
+}
+ul {
+  margin-left: 50%;
+}
+a {
+  margin-right: 4%;
+  color: black;
+}
+.header {
+  padding: 20px;
+}
+a:hover {
+  color: #f97b14;
+}
+
+th {
+  background-color: #d6d6e5;
+  color: black;
+  width: 150px;
+height: 25px;
+text-align: center;
+}
+
+td {
+  background-color: #d6d6e5;
+  color: #000000;
+  width: 200px;
+  height: 25px;
+  text-align: center;
+}
+table {
+  margin: 10px;
+  border: black solid 2px;
+  margin-left: 21px;
+}
+.button>a{
+    background-color: #f97b14;
+    color: #ffffff;
+}
+.button{
+background-color: #f97b14;
+border: none;
+border-radius: 2px;
+}
+table,th,td{
+    border: black solid 2px;
+    border-collapse: collapse;
+}
+.button1>a{
+    background-color: #f91414;
+    color: #ffffff;
+}
+.button1{
+background-color: #f91414;
+border: none;
+border-radius: 2px;
+}
+.success {
+  color: green;
+  text-align: center;
+}
+.error {
+  color: red;
+  text-align: center;
+}
+.warning {
+  color: orange;
+  text-align: center;
+}
+.info {
+  color: blue;
+  text-align: center;
+}

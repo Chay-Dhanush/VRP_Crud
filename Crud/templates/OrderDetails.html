@@ -1,0 +1,41 @@
+{% extends 'home.html' %} 
+{% block title %} Order Details {% endblock %} 
+
+{%block head %} 
+{%load static%}
+<link rel="stylesheet" href="{% static 'OrderDetails.css' %}" />
+{% endblock %} 
+
+
+{% block navbar %}
+<div class="header">
+  <nav class="navbar">
+    <h2>VRP VENTURES</h2>
+    <ul>
+      <a href="/">HOME</a>
+      <a href="/order/">ORDER_PAGE</a>
+      <a href="/show/">SHOW_ORDER</a>
+    </ul>
+  </nav>
+</div>
+{% endblock %} 
+
+
+{%block content %}
+<!-- <h1>VRP VENTURES!</h1> -->
+ <!-- Display messages -->
+{% if messages %}
+        {% for message in messages %}
+             <h3 class="{{ message.tags }}">{% if message.tags %} {% endif %}{{ message }}</h3>
+        {% endfor %}
+{% endif %}
+
+<form method="POST">
+  {%csrf_token%} {{data.as_p}}
+  <input class="button" type="Submit" value="Place Order" />
+</form>
+{% endblock %}
+
+
+<table></table>
+<ul></ul><p></p>

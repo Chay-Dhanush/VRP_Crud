@@ -1,0 +1,36 @@
+{% extends 'home.html' %} {% block title %}Confrim Page{% endblock %} 
+{% block head %} 
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'confpage.css' %}" />
+{% endblock %} 
+
+{% block navbar %}
+
+<div class="header">
+  <nav class="navbar">
+    <h2>VRP VENTURES</h2>
+    <ul>
+      <a href="">HOME</a>
+      <a href="/order/">ORDER_PAGE</a>
+      <a href="/show/">SHOW_ORDER</a>
+    </ul>
+  </nav>
+</div>
+
+{% endblock %} {% block content%}
+<form action="" method="POST">
+  {%csrf_token%}
+  <div>
+    <h1 style="text-align: center">
+      Are you Sure Selected Data will be Deleted ?
+    </h1>
+    <div class="decision">
+      <input name="confrim" type="Submit" value="Yes" class="okay button"/>
+      <button class="cancel button">
+        <a href="/show/">No</a>
+      </button>
+    </div>
+  </div>
+</form>
+{% endblock %}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}Home Page Orders {% endblock %}</title>
+    {% block head %} {%load static %}
+    <link rel="stylesheet" href="{% static 'home.css' %}" />
+    {% endblock %}
+  </head>
+  <body>
+    {% block navbar %}
+
+    <div class="header">
+      <nav class="navbar">
+        <h2>VRP VENTURES</h2>
+        <ul>
+          <a href="/">HOME</a>
+          <a href="order/">ORDER_PAGE</a>
+          <a href="show/">SHOW_ORDER</a>
+        </ul>
+      </nav>
+    </div>
+
+    {% endblock %} {% block content%}
+    <h1 class="brand">VRP VENTURES!</h1>
+    {% endblock %}
+  </body>
+</html>

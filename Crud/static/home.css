@@ -1,0 +1,33 @@
+* {
+  background-color: #18185b;
+  color: #f97b14;
+}
+
+.navbar {
+  box-shadow: 2px 2px 5px 2px #d6d6e5;
+  align-content: center;
+  padding: 20px;
+  background-color: #d6d6e5;
+}
+h2,ul,a{
+    display: inline;
+    background-color: #d6d6e5;
+}
+ul{
+    margin-left: 50%;
+}
+a{
+    margin-right: 4%;
+    color: black;
+}
+.header{
+    padding: 20px;
+}
+.brand {
+  text-align: center;
+}
+a:hover{
+  color: #f97b14;
+}
+
+
