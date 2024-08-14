@@ -71,6 +71,14 @@ def serialize(request):
         model=OrderModel.objects.all()
         serialize=getserilaze(model,many=True)
         return Response(serialize.data)
+    
+
+
+
+
+
+
+
     # elif request.method=='POST':
     #     return Response(serialize.errors, status=status.HTTP_400_BAD_REQUEST)
 @api_view(['POST'])
@@ -81,6 +89,18 @@ def gserialize(request):
             serialize.save()
             return Response(serialize.data,status=status.HTTP_201_CREATED)
         return Response(serialize.errors,status=status.HTTP_400_BAD_REQUEST)
+    
+
+
+
+
+
+
+
+
+
+
+
 
 @api_view(['PUT'])
 def Pserialize(request,f_id):
@@ -95,6 +115,12 @@ def Pserialize(request,f_id):
 
     except model.DoesNotExist:
         return Response(status=status.HTTP_404_NOT_FOUND)
+    
+
+
+
+
+    
 @api_view(['DELETE'])
 def Delete(request,f_id):
     try:
